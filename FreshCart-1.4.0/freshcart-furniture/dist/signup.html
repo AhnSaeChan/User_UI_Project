@@ -39,7 +39,7 @@
 									<a href="./index.html"><img src="./assets/images/logo/logo.svg" alt="" /></a>
 								</div>
 								<div class="mb-3">
-									<h1 class="fs-4 mb-0">Create an account</h1>
+									<h1 class="fs-4 mb-0">회원가입</h1>
 								</div>
 
 								<!-- form -->
@@ -48,53 +48,108 @@
 										<!-- col -->
 										<div class="col-md-6 col-12">
 											<!-- input -->
-											<label for="formSignupfname" class="form-label visually-hidden">First
-												Name</label>
+											<label for="formSignupfname" class="form-label visually-hidden">성
+												</label>
 											<input type="text" class="form-control" id="formSignupfname"
-												placeholder="First Name" required />
-											<div class="invalid-feedback">Please enter first name.</div>
+												placeholder="성" required />
+											<div class="invalid-feedback">성을 입력해주세요.</div>
 										</div>
 										<div class="col-md-6 col-12">
 											<!-- input -->
-											<label for="formSignuplname" class="form-label visually-hidden">Last
-												Name</label>
+											<label for="formSignuplname" class="form-label visually-hidden">이름
+												</label>
 											<input type="text" class="form-control" id="formSignuplname"
-												placeholder="First Name" required />
-											<div class="invalid-feedback">Please enter last name.</div>
+												placeholder="이름" required />
+											<div class="invalid-feedback">이름을 입력해주세요.</div>
+										</div>
+										<div class="col-12">
+											<div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+												<label class="form-check-label" for="inlineRadio1">남</label>
+											  </div>
+											  <div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+												<label class="form-check-label" for="inlineRadio2">여</label>
+											  </div>
 										</div>
 										<div class="col-12">
 											<!-- input -->
-											<label for="formSignupEmail" class="form-label visually-hidden">Email
-												address</label>
-											<input type="email" class="form-control" id="formSignupEmail"
-												placeholder="Email" required />
-											<div class="invalid-feedback">Please enter email.</div>
+											<label for="formSignupEmail" class="form-label visually-hidden">아이디
+												</label>
+											<input type="text" class="form-control" id="formSignupId"
+												placeholder="ID" required />
+											<div class="invalid-feedback">ID를 입력해주세요.</div>
 										</div>
 										<div class="col-12">
 											<div class="password-field position-relative">
 												<label for="formSignupPassword"
-													class="form-label visually-hidden">Password</label>
+													class="form-label visually-hidden">비밀번호</label>
 												<div class="password-field position-relative">
 													<input type="password" class="form-control fakePassword"
-														id="formSignupPassword" placeholder="*****" required />
+														id="formSignupPassword" placeholder="비밀번호" required />
 													<span><i class="bi bi-eye-slash passwordToggler"></i></span>
-													<div class="invalid-feedback">Please enter password.</div>
+													<div class="invalid-feedback">비밀번호를 입력해주세요.</div>
 												</div>
 											</div>
 										</div>
+										<div class="col-12">
+											<div class="password-field position-relative">
+												<label for="formSignupPassword"
+													class="form-label visually-hidden">비밀번호 확인</label>
+												<div class="password-field position-relative">
+													<input type="password" class="form-control fakePassword"
+														id="formSignupPassword" placeholder="비밀번호 확인" required />
+													<span><i class="bi bi-eye-slash passwordToggler"></i></span>
+													<div class="invalid-feedback">비밀번호가 일치하지 않습니다.</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-12">
+											<select class="form-select">
+                                                <option selected value="">010</option>
+                                                <option>011</option>
+												<option>016</option>
+												<option>017</option>
+												<option>018</option>
+												<option>019</option>
+                                            </select>
+                                        </div>
+										<div class="col-md-8 col-12">
+											<!-- input -->
+											<label for="formSignupfname" class="form-label visually-hidden">
+												</label>
+											<input type="text" class="form-control" id="formSignupfname"
+												placeholder="" required />
+											<div class="invalid-feedback">전화번호를 입력해주세요.</div>
+										</div>
+										
+										<div class="col-12">
+											<label for="formSignupEmail" class="form-label visually-hidden">이메일 주소
+												</label>
+											<input type="email" class="form-control" id="formSignupEmail"
+												placeholder="Email" required />
+											<div class="invalid-feedback">이메일을 입력해주세요.</div>
+										</div>
+										<div class="col-12">
+											<label for="formSignupEmail" class="form-label visually-hidden">생일
+												</label>
+											<input type="date" class="form-control" id="formSignupBirth"
+												placeholder="생년월일을 선택해주세요" required />
+											<div class="invalid-feedback">생년월일을 선택해주세요.</div>
+										</div>
 										<!-- btn -->
 										<div class="col-12 d-grid"><button type="submit"
-												class="btn btn-primary">Register</button></div>
+												class="btn btn-primary">회원가입</button></div>
 
 										<div class="col-12">
 											<!-- text -->
 											<p class="mb-2">
-												I already have an account
-												<a href="./signin.html" class="text-link">Sign In</a>
+												계정이 있으신가요?
+												<a href="./signin.html" class="text-link">로그인</a>
 											</p>
 											<p class="mb-0">
 												<small>
-													By continuing, you agree to our
+													상기 안내사항에 모두 동의하고 회원가입 절차를 진행 합니다.<br>
 													<a href="#!" class="text-link">Terms of Service</a>
 													&
 													<a href="#!" class="text-link">Privacy Policy</a>
