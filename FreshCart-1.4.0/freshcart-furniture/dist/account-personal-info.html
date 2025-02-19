@@ -767,7 +767,6 @@
 							
 						
 						<div class="col-12">
-							
 							<div class="card">
 								
 							</div>
@@ -795,18 +794,30 @@
 							<div class="card border-danger bg-danger-subtle">
 								<div class="card-body p-4 d-flex flex-column gap-5">
 									<div class="d-flex flex-column gap-2">
-										<h3 class="mb-0 h5 text-danger">Danger Zone</h3>
-										<p class="mb-0">When you delete your account, your public profile will be
-											deactivated immediately. If you change your mind before the <span
-												class="text-danger">14 days</span> are up, sign in with your email and
-											password, and we'll send you a link to reactivate your account.</p>
+										<h3 class="mb-0 h5 text-danger">경고</h3>
+										<p class="mb-0">계정을 삭제하시면, 개인정보는 즉시 비활성화 됩니다. 
+											계정을 복구하고 싶으면  <span
+											class="text-danger">14일</span> 내에, ID와 비밀번호로 로그인을 해주시면 
+											등록하신 Email로 계정복구 링크를 보내 드리겠습니다.</p>
 									</div>
-
+									<form class="row needs-validation" novalidate>
+									<div class="mb-3 col-12">
+										<div class="password-field position-relative">
+											<label for="accountInforPassword"
+												class="form-label visually-hidden">Password</label>
+											<div class="password-field position-relative">
+												<input type="password" class="form-control fakePassword text-danger"
+													id="accountInforPassword" placeholder="비밀번호를 입력하면 계정이 삭제됩니다" required/>
+												<span><i class="bi bi-eye-slash passwordToggler"></i></span>
+												<div class="invalid-feedback">비밀번호를 입력해주세요.</div>
+											</div>
+										</div>
+									</div>
+									
 									<div>
-										<a href="#!" class=" btn btn-danger" data-bs-toggle="modal"
-											data-bs-target="#deleteModal">Delete Account</a>
+										<button type="submit" class="btn btn-danger w-100">계정 삭제</button>
 									</div>
-
+									</form>
 
 								</div>
 							</div>
