@@ -527,8 +527,8 @@
 							data-breakpoints='{"480": {"slidesPerView": 1}, "768": {"slidesPerView": 1}, "1024": {"slidesPerView": 1}}'>
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
-									<img src="./assets/images/product/product-single-img1.jpg"
-										data-zoom="./assets/images/product/product-single-img1.jpg" alt="Preview"
+									<img src="./assets/images/product/product1.png"
+										data-zoom="./assets/images/product/product1.png" alt="Preview"
 										class="drift w-100" data-zoom-options='{
 										"paneSelector": "#zoomPane",
 
@@ -611,8 +611,8 @@
 							<span class="badge bg-info">New</span>
 							<div class="d-flex align-items-start justify-content-between mt-3 mb-2">
 								<div class="mb-3">
-									<h2>Office Chair Pillow</h2>
-									<span>( Brand Name )</span>
+									<h2>루아보(LUABO) 스튜디오</h2>
+									<span>봉천역3번 출구</span>
 								</div>
 								<div class="text-success d-flex align-items-center gap-2 mt-2">
 									<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -630,13 +630,13 @@
 							<div class="d-flex justify-content-between align-items-center">
 								<div class="d-flex align-items-center gap-3">
 									<p class="mb-0">
-										<span class="text-danger">$300.00</span>
-										<span class="text-decoration-line-through">$400.00</span>
+										<span class="text-">5000원/시간</span>
+
 									</p>
-									<span class="badge bg-danger">Save $100.00</span>
+									
 								</div>
 								<span class="">
-									4.5
+									4.3
 									<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
 										class="bi bi-star-fill align-baseline text-primary" viewBox="0 0 16 16">
 										<path
@@ -689,14 +689,14 @@
 								</div>
 							</div>
 							<div>
-								<a href="#!" class="btn btn-dark">Add to Cart</a>
+								<a href="#!" class="btn btn-dark">예약</a>
 								<a href="#!" class="btn btn-outline-dark">
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
 										class="bi bi-heart" viewBox="0 0 16 16">
 										<path
 											d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
 									</svg>
-									Add to Wishlist
+									즐겨찾기에 추가
 								</a>
 							</div>
 
@@ -1081,7 +1081,7 @@
 			<div class="row">
 				<div class="my-6">
 					<div class="mb-6">
-						<h3 class="mb-4">Reviews</h3>
+						<h3 class="mb-4">평가</h3>
 						<div class="my-2 p-4 bg-light">
 							<div class="row gy-4 gy-lg-0">
 								<div class="col-lg-4 col-md-8">
@@ -1174,15 +1174,83 @@
 												<i class="bi bi-star-half"></i>
 											</small>
 
-											<small>Based on 1 review</small>
+											<small>1개의 평가</small>
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-4 col-12 d-flex justify-content-center align-items-center">
-									<a href="#!" class="btn btn-primary" data-bs-toggle="modal"
-										data-bs-target="#reviewModal">Write a
-										Review</a>
-								</div>
+								<div>
+									<form class="row needs-validation" novalidate>
+										<div class="mb-3 col-12 py-3">
+											<h3 class="h6 pb-1">평가해주세요 *</h3>
+											<div class="rater"></div>
+										</div>
+										<div class="mb-3 col-12">
+											<label for="writeReview" class="form-label">평가를 작성해주세요 *</label>
+											<textarea id="writeReview" class="form-control" rows="5"
+												placeholder="연습실에 대한 평가를 해주세요" required></textarea>
+											<div class="invalid-feedback">평가를 써주세요.</div>
+										</div>
+										<div class="mb-3 col-12">
+											<label for="headline" class="form-label">제목을 작성해주세요 *</label>
+											<input type="text" id="headline" class="form-control"
+												placeholder="연습장에 대한 짧은 평가를 해주세요" required />
+											<div class="invalid-feedback">제목을 입력해주세요.</div>
+										</div>
+										<div class="mb-3 col-12 col-lg-6">
+											<label for="yourName" class="form-label">이름 *</label>
+											<input type="text" id="yourName" class="form-control" placeholder="" required />
+											<div class="invalid-feedback">이름을 입력해 주세요.</div>
+										</div>
+										<div class="mb-3 col-12 col-lg-6">
+											<label for="email" class="form-label">Email *</label>
+											<input type="email" id="email" class="form-control mb-1" placeholder="" required />
+											<div class="invalid-feedback">Email을 입력해주세요.</div>
+											<span class="form-text">평가 확인을 위한 Email을 보내드리겠습니다. 
+												</span>
+										</div>
+										<div class="mb-5 col-12">
+											<!-- Upload Button -->
+											<h3 class="h6 mb-3">업로드</h3>
+											<label class="btn btn-outline-primary d-inline-flex align-items-center gap-1"
+												for="fileInput">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+													class="bi bi-upload" viewBox="0 0 16 16">
+													<path
+														d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+													<path
+														d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
+												</svg>
+												Upload
+											</label>
+											<input type="file" id="fileInput" multiple accept="image/*,video/*" />
+											<br />
+											<small class="mt-2 d-block">최대 10개의 이미지와 3개의 비디오를 업로드하세요 (최대 파일 크기 2GB)</small>
+			
+											<!-- Upload Status -->
+											<div id="uploadStatus"></div>
+			
+											<!-- Display Preview -->
+											<div id="previewContainer"></div>
+										</div>
+										<div class="mb-3 col-12">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" id="gridCheck" required />
+												<label class="form-check-label" for="gridCheck">
+													<span>이용약관에 동의합니다 *</span>
+												</label>
+												<div class="invalid-feedback">
+													반드시 동의하셔야 합니다.
+												</div>
+											</div>
+										</div>
+										<div class="mb-3 col-12">
+											<div class="d-flex align-items-center justify-content-between">
+												<div>*필수 작성</div>
+												<div class="">
+													<button type="submit" class="btn btn-primary">평가 등록</button>
+												</div>
+											</div>
+										</div>
 							</div>
 						</div>
 					</div>
@@ -1190,7 +1258,7 @@
 					<div class="mb-6">
 						<form>
 							<div class="row g-3">
-								<div class="col-lg-4 col-xl-3 col-md-6">
+								<div class="col-lg-4 col-xl-3 col-md-6 py-2">
 									<div class="position-relative">
 										<label for="searchInput" class="visually-hidden"></label>
 										<input type="search" id="searchInput" class="form-control ps-6"
@@ -1205,7 +1273,7 @@
 										</span>
 									</div>
 								</div>
-								<div class="col-lg-4 col-xl-2 col-md-6">
+								<div class="col-lg-4 col-xl-2 col-md-6 py-2">
 									<label for="ratingInput" class="visually-hidden"></label>
 
 									<select id="ratingInput" class="" data-choices=""
