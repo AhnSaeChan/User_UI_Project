@@ -526,7 +526,7 @@
 					<div class="">
 						<div class="d-flex justify-content-between align-items-center mb-2">
 							<h2 class="fs-5">예약자 주소</h2>
-							<a href="#!" class="text-link" data-bs-toggle="modal" data-bs-target="#addressModal">주소 추가
+							<a href="./account-personal-info.html" class="text-link" >주소 추가
 								</a>
 						</div>
 						<div class="d-flex justify-content-between align-items-lg-center flex-column flex-md-row gap-2">
@@ -575,6 +575,7 @@
 										<label class="form-check-label" for="flexRadio">
 										시간제 개인 연습실 (목관악, 현악) ￦4,000/시간
 										</label>
+									
 									</div>
 									<div class="d-flex align-items-center mt-5 mb-2 justify-content-between">
 										<h3 class="fs-5">사용 시간</h3>
@@ -589,6 +590,13 @@
 												<option value="4">5시간</option>
 												<option value="5">6시간 이상</option>
                                                 </select>
+									
+									<div class="d-flex align-items-center mt-5 mb-2 justify-content-between">
+										<h3 class="fs-5">예약 날짜</h3>
+									</div>
+									<label for="accountInfoDate" class="form-label visually-hidden">Date of Birth</label>
+									<input type="date" id="accountInfoDate" class="form-control" placeholder="생년월일"
+										required />
 									<div class="d-flex align-items-center mt-5 mb-2 justify-content-between py-2">
 										<h3 class="fs-5">옵션</h3>
 									</div>
@@ -654,7 +662,7 @@
 										<div class="form-check">
 											<input class="form-check-input" type="radio" name="flexRadioDefault"
 												id="flexRadioDefault1" checked />
-											<label class="form-check-label" for="flexRadioDefault1">Credit card</label>
+											<label class="form-check-label" for="flexRadioDefault1">신용카드</label>
 										</div>
 										<div class="d-flex align-items-center gap-2">
 											<span>
@@ -851,7 +859,7 @@
 											<div class="col-12">
 												<!-- input -->
 												<div class="mb-3">
-													<label for="card-mask" class="form-label">Card Number</label>
+													<label for="card-mask" class="form-label">카드 번호</label>
 													<input type="text" class="form-control" id="card-mask"
 														placeholder="xxxx-xxxx-xxxx-xxxx" required="" />
 
@@ -860,8 +868,8 @@
 											<div class="col-md-6 col-12">
 												<!-- input -->
 												<div class="mb-3 mb-lg-0">
-													<label class="form-label" for="nameoncard">Name on card</label>
-													<input type="text" class="form-control" placeholder="Enter name"
+													<label class="form-label" for="nameoncard">이름</label>
+													<input type="text" class="form-control" placeholder="성함을 입력해주세요"
 														id="nameoncard" required />
 
 												</div>
@@ -869,7 +877,7 @@
 											<div class="col-md-3 col-12">
 												<!-- input -->
 												<div class="mb-3 mb-lg-0 position-relative">
-													<label class="form-label" for="dy-mask">Expiry date</label>
+													<label class="form-label" for="dy-mask">만료일</label>
 													<input type="text" class="form-control" id="dy-mask"
 														placeholder="MM/YY" required />
 
@@ -879,11 +887,11 @@
 												<!-- input -->
 												<div class="mb-3 mb-lg-0">
 													<label for="digit-mask" class="form-label">
-														CVV Code
+														CVV
 														<i class="bi bi-question-circle ms-1" data-bs-toggle="tooltip"
 															data-placement="top"
 															aria-label="A 3 - digit number, typically printed on the back of a card."
-															data-bs-original-title="A 3 - digit number, typically printed on the back of a card."></i>
+															data-bs-original-title="카드 뒤에 적힌 3자리 번호."></i>
 													</label>
 													<input type="password" class="form-control" name="digit-mask"
 														id="digit-mask" placeholder="xxx" maxlength="3"
@@ -901,7 +909,7 @@
 										<div class="form-check">
 											<input class="form-check-input" type="radio" name="flexRadioDefault"
 												id="flexRadioPaypal" />
-											<label class="form-check-label" for="flexRadioPaypal">PayPal</label>
+											<label class="form-check-label" for="flexRadioPaypal">페이팔</label>
 										</div>
 										<div>
 											<svg width="80" height="22" viewBox="0 0 80 22" fill="none"
@@ -936,7 +944,7 @@
 										<div class="form-check">
 											<input class="form-check-input" type="radio" name="flexRadioDefault"
 												id="flexRadioGpay" />
-											<label class="form-check-label" for="flexRadioGpay">Google Pay</label>
+											<label class="form-check-label" for="flexRadioGpay">구글 플레이</label>
 										</div>
 										<div>
 											<svg width="51" height="20" viewBox="0 0 51 20" fill="none"
@@ -976,7 +984,7 @@
 										<div class="form-check">
 											<input class="form-check-input" type="radio" name="flexRadioDefault"
 												id="flexRadioCash" />
-											<label class="form-check-label" for="flexRadioCash">Case on Delivery</label>
+											<label class="form-check-label" for="flexRadioCash">무통장입금</label>
 										</div>
 										<div>
 											<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -999,7 +1007,7 @@
 							</div>
 						</div>
 						<div class="d-grid mt-4">
-							<button class="btn btn-primary" type="submit">Place Your Order</button>
+							<button class="btn btn-primary" type="submit">연습실 예약하기</button>
 
 						</div>
 					</div>
@@ -1012,42 +1020,46 @@
 					<!--Order summary-->
 					<div class="card bg-light bg-opacity-25 mb-4">
 						<div class="card-header px-4 py-3">
-							<h3 class="fs-5 mb-0">Order Summary</h3>
+							<h3 class="fs-5 mb-0">예약 요약</h3>
 						</div>
 						<div class="card-body px-4">
 							<div class="d-flex justify-content-between mb-4">
 								<div class="d-flex align-items-start gap-3 flex-wrap">
-									<a href="#!"><img src="./assets/images/product/product-img-2.jpg"
+									<a href="#!"><img src="./assets/images/product/product1.png"
 											alt="product image" class="border" width="60" /></a>
 
 									<div class="mb-2">
-										<h3 class="fs-6 mb-1 text-link"><a href="#!">Stylish Wooden Table Lamp</a></h3>
+										<h3 class="fs-6 mb-1 text-link"><a href="#!">루아보(LUABO) 스튜디오</a></h3>
 
-										<p class="mb-2 text-dark">Black</p>
+										<p class="mb-2 text-dark">시간제 개인 연습실 (목관악, 현악)</p>
 									</div>
 								</div>
 								<div>
-									<span class="text-dark">$78</span>
+									<span class="text-dark">￦4000원/시간</span>
 								</div>
 							</div>
 							<div class="mb-2 border-top pt-3 mb-2">
 								<div class="d-flex align-items-center justify-content-between mb-2">
-									<span>Subtotal(1 item)</span>
-									<span class="text-dark fw-medium">$78</span>
+									<span>연습실 가격</span>
+									<span class="text-dark fw-medium">￦4000원/시간</span>
 								</div>
 								<div class="d-flex align-items-center justify-content-between mb-2">
-									<span>Shipping</span>
-									<span class="">Free</span>
+									<span>사용 시간</span>
+									<span class="">2시간</span>
+								</div>
+								<div class="d-flex align-items-center justify-content-between mb-2">
+									<span>예약 날짜</span>
+									<span class="">2025-02-25</span>
 								</div>
 								<div class="d-flex align-items-center justify-content-between">
-									<span>Total Saving</span>
-									<span class="">$15</span>
+									<span>옵션 선택</span>
+									<span class="">보면대</span>
 								</div>
 							</div>
 							<div
 								class="d-flex align-items-center justify-content-between border-top pt-3 mb-2 fw-medium text-dark">
-								<span class="">Estimated total:</span>
-								<span class="">$78.00 USD</span>
+								<span class="">총 결제 금액:</span>
+								<span class="">￦8000원</span>
 							</div>
 						</div>
 					</div>
